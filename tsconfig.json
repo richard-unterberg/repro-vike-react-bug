@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "module": "ESNext",
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "types": [
+      "vite/client",
+      "vike-react"
+    ],
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "baseUrl": ".",
+    "paths": {
+      "#zustand/*": ["./lib/zustand/*"],
+      "#utils/*": ["./lib/utils/*"],
+      "#hooks/*": ["./lib/hooks/*"],
+      "#types/*": ["./lib/types/*"],
+      "#map/*": ["./lib/map/*"],
+      "#api/*": ["./lib/api/*"],
+      "#lib/*": ["./lib/*"],
+      "#server/*": ["./server/*"],
+      "#layouts/*": ["./layouts/*"],
+      "#pages/*": ["pages/*"],
+      "#components/*": ["./components/*"],
+      "#root/*": ["./*"]
+    }
+  },
+  "exclude": ["dist", "node_modules", "public"]
+}
