@@ -11,7 +11,7 @@ import telefuncRoute from '#server/telefunc'
 import { vikeHandler } from '#server/vike'
 
 const isProduction = process.env.NODE_ENV === 'production'
-const port = isProduction ? 5247 : 4248
+const port = isProduction ? 4248 : 5247
 const currentEnvUrl = `http://localhost:${port}`
 const hmrPort = process.env.HMR_PORT ? parseInt(process.env.HMR_PORT, 10) : 24678
 
