@@ -34,15 +34,10 @@ export default defineConfig({
       '#hooks': path.resolve(__dirname, './lib/hooks/'),
       '#types': path.resolve(__dirname, './lib/types/'),
       '#server': path.resolve(__dirname, './server/'),
-      '#zustand': path.resolve(__dirname, './lib/zustand/'),
-      '#map': path.resolve(__dirname, './lib/map/'),
-      '#api': path.resolve(__dirname, './lib/api/'),
       '#lib': path.resolve(__dirname, './lib/'),
-      '#layouts': path.resolve(__dirname, './layouts/'),
       '#pages': path.resolve(__dirname, './pages/'),
       '#components': path.resolve(__dirname, './components/'),
       '#root': __dirname,
-      'mapbox-gl': 'maplibre-gl', // will deprecate in vite 6
     },
   },
 })

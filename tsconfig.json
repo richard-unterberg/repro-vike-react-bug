@@ -25,15 +25,11 @@
     "jsxImportSource": "react",
     "baseUrl": ".",
     "paths": {
-      "#zustand/*": ["./lib/zustand/*"],
       "#utils/*": ["./lib/utils/*"],
       "#hooks/*": ["./lib/hooks/*"],
       "#types/*": ["./lib/types/*"],
-      "#map/*": ["./lib/map/*"],
-      "#api/*": ["./lib/api/*"],
       "#lib/*": ["./lib/*"],
       "#server/*": ["./server/*"],
-      "#layouts/*": ["./layouts/*"],
       "#pages/*": ["pages/*"],
       "#components/*": ["./components/*"],
       "#root/*": ["./*"]

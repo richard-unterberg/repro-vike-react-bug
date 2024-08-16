@@ -9,8 +9,8 @@ export default defineConfig({
   content: {
     pipeline: {
       include: [
-        // the default
-        /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
+        // the minimum
+        /\.([jt]sx)($|\?)/,
       ],
       exclude: [
         // the default
