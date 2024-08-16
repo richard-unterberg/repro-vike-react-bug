@@ -6,17 +6,13 @@ import 'dotenv/config'
 
 import { createHandler } from '@universal-middleware/express'
 import compression from 'compression'
-import moduleAlias from 'module-alias'
 
 import telefuncRoute from '#server/telefunc'
 import { vikeHandler } from '#server/vike'
 
-// alias mapbox-gl to maplibre-gl
-moduleAlias.addAlias('mapbox-gl', 'maplibre-gl')
-
 const isProduction = process.env.NODE_ENV === 'production'
-const port = isProduction ? process.env.VITE_PROD_PORT : process.env.VITE_DEV_PORT
-const currentEnvUrl = isProduction ? process.env.VITE_SITE_URL_PROD : process.env.VITE_SITE_URL_DEV
+const port = isProduction ? 5247 : 4248
+const currentEnvUrl = `http://localhost:${port}`
 const hmrPort = process.env.HMR_PORT ? parseInt(process.env.HMR_PORT, 10) : 24678
 
 async function getRoot() {
@@ -66,7 +62,7 @@ async function startServer() {
   app.all('*', createHandler(vikeHandler))
 
   app.listen(port)
-  console.log(`Server running at ${currentEnvUrl}${process.env.VITE_BASE}`)
+  console.log(`Server running at ${currentEnvUrl}`)
 
   return app
 }
