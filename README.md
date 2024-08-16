@@ -1,5 +1,3 @@
-# ladetarif-check - frontend app
-
 ## Usage
 
 ### Install
